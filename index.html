@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto programadorBR</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body><!DOCTYPE html>
 <html>
 <head>
   <title>Calculadora de Gorjeta</title>
@@ -24,17 +14,24 @@
     <label for="percent">Porcentagem de Gorjeta:</label>
     <input type="number" id="percent" placeholder="Digite a porcentagem de gorjeta">
   
-    <button onclick="calcularGorjeta()">Calcular</button>
+    <button class="btn-calcular" onclick="calcularGorjeta()">Calcular</button>
   
     <h2>Valor da Gorjeta:</h2>
     <p id="valorGorjeta"></p>
   
     <h2>Total a Pagar:</h2>
     <p id="totalPagar"></p>
+
+    <label for="feedback">Feedback e Sugestões:</label>
+    <textarea id="feedback" rows="4" placeholder="Digite seu feedback e sugestões"></textarea>
+
+    <button class="btn-enviar" onclick="enviarFeedback()">Enviar</button>
   </div>
 
+  <footer>
+    <p>&copy; 2023 Seu Web App. Todos os direitos reservados.</p>
+  </footer>
+
   <script src="script.js"></script>
-</body>
-</html>
 </body>
 </html>
